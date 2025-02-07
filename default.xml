@@ -7,6 +7,9 @@
   <remove-project name="platform/frameworks/av"/>
   <project path="frameworks/av" name="frameworks_av" revision="arpi-14" remote="arpi"/>
 
+  <remove-project name="platform/external/libusb"/>
+  <project path="external/libusb" name="platform/external/libusb" revision="android11-release"/>  
+
   <remove-project name="platform/hardware/broadcom/libbt"/>
   <project path="hardware/broadcom/libbt" name="hardware_broadcom_libbt" revision="arpi-14" remote="arpi"/>
   <remove-project name="platform/hardware/interfaces"/>
@@ -16,4 +19,8 @@
   <project path="device/arpi/rpi5" name="device_arpi_rpi5" revision="arpi-14" remote="arpi"/>
 
   <project path="vendor/arpi/RpLauncher" name="RpLauncher" revision="arpi-14" remote="arpi"/>
+
+  <remote name="arpi2" fetch="https://github.com/peyo-hd"/>
+  <project path="hardware/intel/nn-hal" name="hardware_intel_nn-hal" revision="arpi-13" remote="arpi2"/>  
+  
 </manifest>
